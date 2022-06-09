@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="responsiveWeb.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@300&family=Questrial&family=Raleway:ital,wght@0,300;1,500&display=swap');
+        </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#qoutations">Qoutations</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul></div>
+       <div class="mobile-nav">
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+        <h1 class="close-btn">x</h1>
+       </div>
+    </nav>
+
+    <a name="home">
+        <div class="front-page">
+            <div class="welcome">
+                <div class="welcome-text">
+                    <p>This is my output for challenge 4.</p>
+                    <p class="subtext">Creating a Responsive Website.</p>
+                </div>
+            </div></div></a>
+
+
+            <a name="qoutations">
+                <section class="container">
+                    <div class="card">
+                        <div class="text"></div>
+                        <p>Believe in yourself, you CAN do it!</p>
+                         </div>
+        
+                    <div class="card">
+                        <div class="text"></div>
+                            <p>If there is no struggle, there is no success.</p>
+                         </div>
+                    
+                    <div class="card">
+                        <div class="text"></div>
+                            <p>Don't be the same, be BETTER</p>
+                         </div>
+                        </section></a>
+
+                        <a name="gallery">
+                            <section class="tours">
+                                   <div class="col image-col">
+                                       <div class="image-gallery">
+                                           <img src="./responsive-img/pic1.jpg" alt="">
+                                           <img src="./responsive-img/pic2.jpg" alt="">
+                                           <img src="./responsive-img/pic3.jpg" alt="">
+                                           <img src="./responsive-img/pic4.jpg" alt="">
+                                           <img src="./responsive-img/pic5.jpeg" alt="">
+                                           <img src="./responsive-img/pic6.jpg" alt="">
+                                           <img src="./responsive-img/pic7.jpg" alt="">
+                                           <img src="./responsive-img/pic8.jpg" alt="">
+                                           <img src="./responsive-img/pic10.jpg" alt="">
+                                           <img src="./responsive-img/pic11.jpg" alt="">
+                                           
+                                       </div>
+                                   </div>          
+                           </section></a>
+                       </div>
+                   
+                   
+                           <script>
+                               const mobileNav = document.querySelector('.mobile-nav')
+                               const menuBtn = document.querySelector('.menu-btn')
+                               const navlinks = document.querySelector('.nav-links')
+                               const closeBtn = document.querySelector('.close-btn')
+                   
+                               mobileNav.addEventListener('click',(e)=>{
+                                   navlinks.classList.toggle('mobile-menu')
+                                   if(e.target === menuBtn){
+                                       menuBtn.replaceWith(closeBtn)
+                                       closeBtn.style.display = 'block'
+                                   }
+                                   if(e.target === closeBtn){
+                                       closeBtn.replaceWith(menuBtn)
+                                       }
+                               })
+                               
+                         
+                           </script>
+
+                    
+</body>
+</html>
